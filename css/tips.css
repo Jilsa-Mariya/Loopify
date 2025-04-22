@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ece5e5;
+}
+
+/* Header */
+header {
+    
+    color: rgb(197, 228, 187);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#557456;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #2E8B57;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('recycle-banner.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Main Content */
+.container {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Sections */
+.section {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: white;
+}
+.container {
+    height: 750px;  /* Set the height to whatever value you need */
+}
+/* next division
+/* Add to your styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #377a53; /* Greenish tone */
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #557456; /* Dark green */
+    margin: 10px;
+}
+
+nav a:hover {
+    color:  #ecd78b; /* Light color for hover */
+}
+/* Background gradient */
+body {
+    background: linear-gradient(to right, #a8d5ba, #f0f8f4);
+}
+
+
+/* Style for Navigation Bar */
+nav {
+    background-color: #557456;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #415d45;
+    border-radius: 5px;
+}
+/* Style for Map */
+.container {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f8f4;
+    border-radius: 10px;
+}
+
+iframe {
+    border: 5px solid #2d6a4f;
+    border-radius: 10px;
+}
+.recycling-tip{
+    width: 30px;
+    height: auto;
+}
+.description{
+    text-align: center;
+    
+}
+.recycling-tip {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px; /* Or any size you prefer */
+    height: auto;
+}

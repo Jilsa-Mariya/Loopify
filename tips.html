@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Locator</title>
+    <link rel="stylesheet" href="./css/tips.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="tips.html">Recycling Tips</a>
+        <a href="tutorials.html">Tutorials & Videos</a>
+        <a href="locator.html">Locator</a>
+        <a href="forum.html">Community Forum</a>
+    </nav>
+
+    <header>
+        <h1>MATERIAL RECYCLING</h1>
+    </header>
+
+    <div class="container">
+        <!-- Dropdown for selecting recycling tips -->
+        <select id="RecyclingTips" onchange="showContent()" style="font-size: 16px; width: 250px; height: 40px;">
+            <option value="">Select an option</option>
+            <option value="FOOD RECYCLING">FOOD RECYCLING</option>
+            <option value="PAPER RECYCLING">PAPER RECYCLING</option>
+            <option value="PLANTATION">PLANTATION</option>
+            <option value="COMPOSTING">COMPOSTING</option>
+            <option value="PLASTIC RECYCLING">PLASTIC RECYCLING</option>
+        </select>
+
+        <!-- Div to display content dynamically -->
+        <div id="contentContainer"></div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Recycle Awareness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript function to show content based on selection
+        function showContent() {
+            var selectedOption = document.getElementById("RecyclingTips").value;
+            var contentContainer = document.getElementById("contentContainer");
+        
+            // Clear any previous content
+            contentContainer.innerHTML = "";
+        
+            if (selectedOption === "FOOD RECYCLING") {
+                contentContainer.innerHTML = `
+                    <div class="recycling-tip">
+                        <img src="https://img.freepik.com/free-vector/compost-cycle-concept-illustration_114360-8733.jpg?t=st=1740411258~exp=1740414858~hmac=e66e674b87c67d037db1a3b07e6e89cc2bcdad6f77cbc14e62165057e25051eb&w=1480" 
+                             alt="Composting Cycle" style="width: 700px; height: auto; display: block; align:center ;">
+                      
+                    </div>
+                `;
+            } else if (selectedOption === "PAPER RECYCLING") {
+                contentContainer.innerHTML = `
+                    <div class="recycling-tip">
+                        <img src="https://img.freepik.com/premium-vector/used-plaper-items-items-made-from-recycled-paper-new-life-paper-examples-used-paper-products-items-white-background_281155-21.jpg?w=1480" 
+                             alt="Recycled Paper" style="width: 700px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+             
+                    </div>
+                `;
+            } else if (selectedOption === "PLANTATION") {
+                contentContainer.innerHTML = `
+                    <div class="recycling-tip">
+                        <img src="https://img.freepik.com/premium-vector/planting-is-create-beautiful-world_853066-13.jpg?w=2000" 
+                             alt="Planters" style="width: 700px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                      
+                    </div>
+                `;
+            } else if (selectedOption === "COMPOSTING") {
+                contentContainer.innerHTML = `
+                    <div class="recycling-tip">
+                        <img src="https://img.freepik.com/premium-vector/ecological-process-concept-eductaional-materials-infographics-food-scrambs-compost-fertilizer_118813-19743.jpg?w=1800" 
+                             alt="Composting Process" style="width: 700px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                       
+                    </div>
+                `;
+            } else if (selectedOption === "PLASTIC RECYCLING") {
+                contentContainer.innerHTML = `
+                    <div class="recycling-tip">
+                        <img src="https://img.freepik.com/premium-vector/circular-economy-tiny-people-sustainable-strategy-circulation-resources_1135642-694.jpg?w=2000" 
+                             alt="Plastic Recycling" style="width: 700px; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                  
+                    </div>
+                `;
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>

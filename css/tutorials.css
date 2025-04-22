@@ -1,0 +1,231 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    /* Background pattern */
+    background-image: radial-gradient(rgba(0, 128, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    color: #2E8B57;
+    margin-top: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#searchBar {
+    padding: 12px;
+    width: 300px;
+    border: 2px solid #2E8B57;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+#searchBar:focus {
+    border-color: #25734A;
+    box-shadow: 0px 0px 8px rgba(46, 139, 87, 0.5);
+}
+
+#searchBtn {
+    padding: 12px 18px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+#searchBtn:hover {
+    background-color: #25734A;
+    transform: scale(1.05);
+}
+
+/* Tutorial Containers (Increased Width) */
+.tutorial-container {
+    width: 95%; /* Increased width */
+    max-width: 800px; /* Slightly wider */
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.tutorial-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Subcategory Headers */
+.subcategory {
+    background:#557456;
+    color: white;
+    padding: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.subcategory:hover {
+    background: #25734A;
+}
+
+/* Arrow Animation */
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Hidden Subcategory Content */
+.sub-options {
+    display: none;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Tutorial Items */
+.tutorial-item {
+    padding: 12px;
+    background: white;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tutorial-item:hover {
+    background: #D3E8D1;
+    transform: scale(1.02);
+}
+
+/* Tutorial Content Display */
+.tutorial-content {
+    background: white;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tutorial-content h3 {
+    color: #2E8B57;
+}
+
+.tutorial-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tutorial-content ul li {
+    background: #f4f4f4;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Video Embed Styling */
+iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #2E8B57;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#333;
+    color: white;
+}
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1b4332; /* Dark green */
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #e9d8a6; /* Light color for hover */
+}
+
+nav {
+    background-color:#537456;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 42px;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#415d45;
+    border-radius: 5px;
+        background-color: transparent !important; /* Removes background color */
+        color: inherit !important; /* Keeps the same text color */
+}

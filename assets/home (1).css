@@ -1,0 +1,214 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: 12px; /* Base font size for the page */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#557456; /* Green color */
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    padding: 8px 12px; 
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500; 
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color:  #ecd78b; 
+    border-radius: 5px;
+}
+
+/* Title and Subtitle */
+.title {
+    text-align: center;
+    color:#2E8B57;
+    margin-top: 15px;
+    font-size: 2.5em; /* Increased font size */
+    animation: fadeIn 2s ease-out;
+}
+
+.subtitle {
+    text-align: center;
+    color: #333;
+    font-size: 1.1em; /* Slightly increased font size */
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Header Section */
+.header-section {
+    background-color:#557456;
+    color: white;
+    padding: 60px 40px; /* Increased padding */
+    text-align: center;
+    animation: slideIn 2s ease-out;
+}
+
+.header-container h1 {
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 15px;
+}
+
+.header-container p {
+    font-size: 1.5em; /* Increased font size */
+}
+
+/* Recycling Info Section */
+.recycling-info {
+    padding: 60px 40px; /* Increased padding */
+    text-align: center;
+    background-color: #ffffff;
+    animation: fadeIn 3s ease-out;
+}
+
+.recycling-info h2 {
+    font-size: 2.8em; /* Increased font size */
+    margin-bottom: 40px; /* Increased margin */
+    color: #2E8B57;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Increased gap */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.info-item {
+    background-color: white;
+    padding: 50px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px; /* Increased min-width */
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.info-item:hover {
+    transform: translateY(-12px); /* Slightly stronger hover effect */
+}
+
+.info-item h3 {
+    color: #2E8B57;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.info-item p {
+    color: #555;
+    font-size: 1.1em; /* Increased font size */
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    padding: 60px 40px; /* Increased padding */
+    text-align: center;
+    background-color: #f4f4f4;
+    animation: fadeIn 4s ease-out;
+}
+
+.fun-facts h2 {
+    font-size: 2.8em; /* Increased font size */
+    margin-bottom: 40px; /* Increased margin */
+    color: #2E8B57;
+}
+
+.facts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Increased gap */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.fact-item {
+    background-color: white;
+    padding: 50px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px; /* Increased min-width */
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.fact-item:hover {
+    transform: translateY(-12px); /* Slightly stronger hover effect */
+}
+
+.fact-item p {
+    color: #555;
+    font-size: 1.1em; /* Increased font size */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 40px; /* Increased padding */
+    text-align: center;
+    font-size: 1.3em; /* Increased font size */
+    margin-top: auto;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

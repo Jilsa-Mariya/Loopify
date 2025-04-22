@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Forum</title>
+    <link rel="stylesheet" href="./css/forum.css">
+    <link rel="icon" href="path/to/favicon.ico">
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js"></script>
+
+    <!-- Forum JavaScript -->
+    <script type="module" src="./js/forum.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tips.html">Recycling Tips</a>
+        <a href="tutorials.html">Tutorials & Videos</a>
+        <a href="faq.html">FAQ</a>
+        <a href="forum.html">Community Forum</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <h1>Recycling Community Forum</h1>
+
+    <!-- 🏆 User Dashboard -->
+    <div id="user-dashboard">
+        <p><strong>Your Points:</strong> <span id="user-points">0</span></p>
+        <p><strong>Badge:</strong> <span id="badge-container"></span></p>
+    </div>
+
+    <!-- ✏️ Post Submission -->
+    <div id="post-form">
+        <textarea id="post-text" placeholder="Share your recycling idea..."></textarea>
+        <input type="file" id="post-image" accept="image/*">
+        <button id="submit-post">Post</button>
+    </div>
+
+    <!-- 📝 Forum Posts -->
+    <div id="forum-posts"></div>
+
+    <footer>
+        <p>&copy; 2025 Recycle Awareness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

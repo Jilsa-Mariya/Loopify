@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Locator</title>
+    <link rel="stylesheet" href="./css/locator.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="tips.html">Recycling Tips</a>
+        <a href="tutorials.html">Tutorials & Videos</a>
+        <a href="locator.html">Locator</a>
+        <a href="forum.html">Community Forum</a>
+    </nav>
+
+    <header>
+        <h1>EcoMap</h1>
+   </header>
+
+    <div class="container">
+        <h1>Find a Recycling Center</h1>
+        <select id="recyclingSelect" onchange="showIframe()">
+            <option value="">Select an option</option>
+            <option value="greenEarth">Green Earth Recycling</option>
+            <option value="Escrappy Recyclers">Escrappy Recyclers</option>
+            <option value="SIMCO">SIMCO</option>
+            <option value="Nexia Scrap Recycling">Nexia Scrap Recycling</option>
+            <option value="Progressiv E-Recycling">Progressiv E-Recycling</option>
+        </select>
+
+        <div id="iframeContainer"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Recycle Awareness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showIframe() {
+            // Get selected value from the dropdown
+            var select = document.getElementById('recyclingSelect');
+            var value = select.value;
+            var iframeContainer = document.getElementById('iframeContainer');
+            
+            // Clear the previous iframe content
+            iframeContainer.innerHTML = '';
+
+            // Check if the value is valid, then display the corresponding iframe
+            if (value === "greenEarth") {
+                
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.338414285259!2d76.31030718608605!3d10.552668962722953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7e50003e18453%3A0x70ea3dd07a67eaaf!2sGreenR%20Recycling!5e0!3m2!1sen!2sin!4v1740399096531!5m2!1sen!2sin";
+                iframe.width = "800";
+                iframe.height = "600";
+                iframe.style.border = "0";
+                iframe.allowfullscreen = "";
+                iframe.loading = "lazy";
+                iframe.referrerpolicy = "no-referrer-when-downgrade";
+                iframeContainer.appendChild(iframe);
+            } else if (value === "Escrappy Recyclers") {
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.427505322755!2d77.49576457607445!3d13.00842588731034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3cf5e4f7dd2f%3A0x9dd8e754ab79771c!2sEscrappy%20Recyclers%20E%20waste!5e0!3m2!1sen!2sin!4v1740402187014!5m2!1sen!2sin";
+                iframe.width = "600";
+                iframe.height = "450";
+                iframe.style.border = "0";
+                iframe.allowfullscreen = "";
+                iframe.loading = "lazy";
+                iframe.referrerpolicy = "no-referrer-when-downgrade";
+                iframeContainer.appendChild(iframe);
+            } else if (value === "SIMCO") {
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.401814017425!2d76.29312467603906!3d9.983628990120943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080de435c8fab3%3A0x521ca335790044d2!2sSIMCO%20(South%20India%20Metal%20Corporation)!5e0!3m2!1sen!2sin!4v1740402265190!5m2!1sen!2sin";
+                iframe.width = "600";
+                iframe.height = "450";
+                iframe.style.border = "0";
+                iframe.allowfullscreen = "";
+                iframe.loading = "lazy";
+                iframe.referrerpolicy = "no-referrer-when-downgrade";
+                iframeContainer.appendChild(iframe);
+            } else if (value === "Nexia Scrap Recycling") {
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.3884083088656!2d76.28637118604577!3d9.984739364644806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d1f4cbe2e8d%3A0x656f10ceb51b7367!2sNexia%20Scrap%20Recycling%20Co.!5e0!3m2!1sen!2sin!4v1740402299722!5m2!1sen!2sin";
+                iframe.width = "600";
+                iframe.height = "450";
+                iframe.style.border = "0";
+                iframe.allowfullscreen = "";
+                iframe.loading = "lazy";
+                iframe.referrerpolicy = "no-referrer-when-downgrade";
+                iframeContainer.appendChild(iframe);
+            } else if (value === "Progressiv E-Recycling") {
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.409966388305!2d76.2546461760441!3d10.46831198966236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f1e36adced09%3A0x5ac8527588fa81b3!2sPROGRESSIV-E%20RECYCLING!5e0!3m2!1sen!2sin!4v1740402333638!5m2!1sen!2sin";
+                iframe.width = "600";
+                iframe.height = "450";
+                iframe.style.border = "0";
+                iframe.allowfullscreen = "";
+                iframe.loading = "lazy";
+                iframe.referrerpolicy = "no-referrer-when-downgrade";
+                iframeContainer.appendChild(iframe);
+            } else {
+                // If no valid option is selected, show a message
+                iframeContainer.innerHTML = "<p>Please select a valid recycling center from the dropdown list.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
