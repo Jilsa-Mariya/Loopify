@@ -17,13 +17,13 @@
 ## 🖼️ Project Preview
 
 > Home Page  
-![Preview1](assets/preview1.jpeg)
+![Preview1](assets/preview3.jpeg)
 
-> Forum Interface  
+> Locator  
 ![Preview2](assets/preiew2.jpeg)
 
 > Tips Section  
-![Preview3](assets/preview3.jpeg)
+![Preview3](assets/preview1.jpeg)
 
 ---
 
